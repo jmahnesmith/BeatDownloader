@@ -4,8 +4,9 @@ using System.Text;
 
 namespace BeatsaverDataTunnel.Models
 {
-    public class ListOfVoteSumary
+    public class VerifyResponse
     {
-        public List<VoteSummary> votes = new List<VoteSummary>();
+        public string error;
+        public string success;
     }
 }

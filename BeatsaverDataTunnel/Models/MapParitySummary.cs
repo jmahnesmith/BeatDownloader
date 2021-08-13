@@ -4,8 +4,10 @@ using System.Text;
 
 namespace BeatsaverDataTunnel.Models
 {
-    public class ListOfVoteSumary
+    public class MapParitySummary
     {
-        public List<VoteSummary> votes = new List<VoteSummary>();
+        public int errors;
+        public int resets;
+        public int warns;
     }
 }
