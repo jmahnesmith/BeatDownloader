@@ -7,10 +7,10 @@ namespace BeatsaverDataTunnel.Models
     public class MapDifficulty
     {
         public int bombs;
-        public string[] characteristic = new[] { "Standard", "OneSaber", "NoArrows", "90Degree", "360Degree", "Lightshow", "Lawless" };
+        public string characteristic;
         public bool chroma;
         public bool cinema;
-        public string[] difficulty = new[] { "Easy", "Normal", "Hard", "Expert", "ExpertPlus" };
+        public string difficulty;
         public int events;
         public double length;
         public bool me;

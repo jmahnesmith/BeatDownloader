@@ -7,7 +7,7 @@ namespace BeatsaverDataTunnel.Models
     public class MapVersion
     {
         public string coverURL;
-        public Instant createdAt;
+        public DateTime createdAt;
         public List<MapDifficulty> diffs = new List<MapDifficulty>();
         public string downloadURL;
         public string feedback;
@@ -15,8 +15,8 @@ namespace BeatsaverDataTunnel.Models
         public string key;
         public string previewURL;
         public short sageScore;
-        public string[] state = new[] { "Uploaded", "Testplay", "Published", "Feedback" };
-        public Instant testplayAt;
+        public string state;
+        public DateTime testplayAt;
         public List<MapTestplay> testplays = new List<MapTestplay>();
     }
 }

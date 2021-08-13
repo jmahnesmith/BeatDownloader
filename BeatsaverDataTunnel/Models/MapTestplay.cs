@@ -6,9 +6,9 @@ namespace BeatsaverDataTunnel.Models
 {
     public class MapTestplay
     {
-        public Instant createdAt;
+        public DateTime createdAt;
         public string feedback;
-        public Instant feedbackAt;
+        public DateTime feedbackAt;
         public UserDetail user;
         public string video;
     }

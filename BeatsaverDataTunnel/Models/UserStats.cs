@@ -10,8 +10,8 @@ namespace BeatsaverDataTunnel.Models
         public float avgDuration;
         public float avgScore;
         public UserDiffStats diffStats;
-        public Instant firstUpload;
-        public Instant lastUpload;
+        public DateTime firstUpload;
+        public DateTime lastUpload;
         public int rankedMaps;
         public int totalDownvotes;
         public int totalMaps;

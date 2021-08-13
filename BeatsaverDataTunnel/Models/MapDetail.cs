@@ -15,7 +15,7 @@ namespace BeatsaverDataTunnel.Models
         public bool qualified;
         public bool ranked;
         public MapStats stats;
-        public Instant uploaded;
+        public DateTime uploaded;
         public UserDetail uploader;
         public List<MapVersion> versions = new List<MapVersion>();
     }
