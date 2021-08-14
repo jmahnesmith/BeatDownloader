@@ -7,6 +7,7 @@ namespace BeastsaberScraper
 {
     public class Scraper
     {
+        // TODO: Add overload methods to allow for different time filters.
         public List<Song> ScrapeSongs()
         {
             //Create a list of songs
