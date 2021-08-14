@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BeastsaberScraper.Scraper
+namespace BeastsaberScraper
 {
     public class Scraper
     {
@@ -17,7 +17,7 @@ namespace BeastsaberScraper.Scraper
             HtmlDocument doc = web.Load("https://bsaber.com/songs/top/?time=7-days");
 
             // Loop through each element that has the class "-download-zip" and add the href to the 
-            foreach (var songElement in doc.DocumentNode.SelectNodes("//a[@class='-download-zip']"))
+            foreach (var songElement in doc.DocumentNode.SelectNodes("//a[contains(@class, '-download-zip')]"))
             {
                 // Gets the href link of the download link
                 // For example:
@@ -25,7 +25,7 @@ namespace BeastsaberScraper.Scraper
                 var href = songElement.Attributes["href"].Value;
 
                 // Take the id in the last part of the url
-                var songId = href.Substring(href.LastIndexOf('/'));
+                var songId = href.Substring(href.LastIndexOf('/') + 1);
 
                 // Create a song and add it to a list
                 songs.Add(new Song(songId));

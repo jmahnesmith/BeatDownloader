@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BeastsaberScraper.Scraper
+namespace BeastsaberScraper
 {
     public class Song
     {
