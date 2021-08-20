@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeastsaberScraper.Tests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeatDownloaderConsole", "BeatDownloaderConsole\BeatDownloaderConsole.csproj", "{84F5783A-FBDF-44AC-99B5-8095D6FAD5AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeatDownloaderConsole.Tests", "BeatDownloaderConsole.Tests\BeatDownloaderConsole.Tests.csproj", "{071EF3F6-1CCB-4582-86ED-5F2916E54631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeatDownloaderConsole.Tests", "BeatDownloaderConsole.Tests\BeatDownloaderConsole.Tests.csproj", "{071EF3F6-1CCB-4582-86ED-5F2916E54631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeatDownloaderPlugin", "BeatDownloaderPlugin\BeatDownloaderPlugin.csproj", "{3BE7D3A4-0189-4D5B-9EEF-0BCC801DD69A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{071EF3F6-1CCB-4582-86ED-5F2916E54631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{071EF3F6-1CCB-4582-86ED-5F2916E54631}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{071EF3F6-1CCB-4582-86ED-5F2916E54631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE7D3A4-0189-4D5B-9EEF-0BCC801DD69A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE7D3A4-0189-4D5B-9EEF-0BCC801DD69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE7D3A4-0189-4D5B-9EEF-0BCC801DD69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE7D3A4-0189-4D5B-9EEF-0BCC801DD69A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
