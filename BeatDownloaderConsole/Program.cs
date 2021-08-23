@@ -1,8 +1,11 @@
-﻿using BeastsaberScraper;
-using BeatsaverDataTunnel.Api;
-using BeatsaverDataTunnel.Models;
+﻿using BeatDownloaderLib.API.DataAccess;
+using BeatDownloaderLib.API.Models;
+using BeatDownloaderLib.Core;
+using BeatDownloaderLib.Scraper;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace BeatDownloaderConsole
@@ -14,11 +17,11 @@ namespace BeatDownloaderConsole
             Console.WriteLine("Hello, welcome to BeatDownloader.");
             Console.WriteLine("Finding Maps...");
 
-            Scraper scraper = new Scraper();
+            BeastSaberScraper scraper = new BeastSaberScraper();
             var songs = scraper.ScrapeSongs();
 
             Console.WriteLine("Found the following songs:");
-            Maps map = new Maps();
+            MapEndpoint map = new MapEndpoint();
             List<MapDetail> maps = new List<MapDetail>();
             SongDownloader songDownloader = new SongDownloader();
             foreach (var song in songs)
