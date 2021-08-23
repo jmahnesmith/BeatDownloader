@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeatDownloaderLib.Tests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeatDownloaderConsole", "BeatDownloaderConsole\BeatDownloaderConsole.csproj", "{48826091-8A0D-4FF1-B3B7-EB35A63BA304}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeatDownloaderPlugin", "BeatDownloaderPlugin\BeatDownloaderPlugin.csproj", "{0D331A90-FF13-4EB4-98C3-2CC78066FB25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{48826091-8A0D-4FF1-B3B7-EB35A63BA304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48826091-8A0D-4FF1-B3B7-EB35A63BA304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48826091-8A0D-4FF1-B3B7-EB35A63BA304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D331A90-FF13-4EB4-98C3-2CC78066FB25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D331A90-FF13-4EB4-98C3-2CC78066FB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D331A90-FF13-4EB4-98C3-2CC78066FB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D331A90-FF13-4EB4-98C3-2CC78066FB25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

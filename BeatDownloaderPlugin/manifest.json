@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "BeatDownloaderPlugin",
+  "name": "BeatDownloaderPlugin",
+  "author": "jmahnesmith",
+  "version": "0.0.1",
+  "description": "A plugin that automatically downloads top songs from BeastSaber",
+  "gameVersion": "1.11.1",
+  "dependsOn": {
+    "BSIPA": "^4.0.5"
+  },
+  "features": []
+}
