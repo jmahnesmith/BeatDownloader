@@ -9,14 +9,20 @@ namespace BeatDownloaderLib.Core
 {
     public class SongDownloader
     {
+        private GamePathManager gamePathManager;
+        public SongDownloader(GamePathManager gamePathManager)
+        {
+            this.gamePathManager = gamePathManager;
+        }
+
         // TODO: Add a way to find beatsaber path automatically
         public void DownloadSong(MapDetail song)
         {
             using (WebClient client = new WebClient())
-            {
+            { 
                 var fileName = $"{ song.id } ({ song.name})";
-                var zipPath = $"D:\\{fileName}.zip";
-                var extractedPath = @"D:\SteamGames\steamapps\common\Beat Saber\Beat Saber_Data\CustomLevels\" + fileName;
+                var zipPath = Path.GetTempPath() + $"{fileName}.zip";
+                var extractedPath = gamePathManager.GetGamePath() + fileName;
                 var latestVersion = song.versions[song.versions.Count - 1];
 
                 try
@@ -36,7 +42,7 @@ namespace BeatDownloaderLib.Core
         public bool SongExists(MapDetail song)
         {
             var folderName = $"{ song.id } ({song.name})";
-            var folderPath = @"D:\SteamGames\steamapps\common\Beat Saber\Beat Saber_Data\CustomLevels\" + folderName;
+            var folderPath = gamePathManager.GetGamePath() + folderName;
 
             if (Directory.Exists(folderPath))
             {

@@ -23,7 +23,7 @@ namespace BeatDownloaderConsole
             Console.WriteLine("Found the following songs:");
             MapEndpoint map = new MapEndpoint();
             List<MapDetail> maps = new List<MapDetail>();
-            SongDownloader songDownloader = new SongDownloader();
+            SongDownloader songDownloader = new SongDownloader(new GamePathManager());
             foreach (var song in songs)
             {
                 var mapDetail = await map.GetMapById(song.ID);
@@ -36,6 +36,7 @@ namespace BeatDownloaderConsole
                 {
                     Console.WriteLine($"Downloading: {mapDetail.name}");
                     songDownloader.DownloadSong(mapDetail);
+                    Console.WriteLine($"Successfully downloaded:{mapDetail.name}");
                 }
             }
         }
